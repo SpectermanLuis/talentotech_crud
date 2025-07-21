@@ -743,8 +743,10 @@ def altaProducto()
 ```
 
 Procesos para el alta de un producto
-Solicita ingresar los datos del producto
-Insertarlos en la tabla productos
+
+Solicita ingresar los datos del producto   ( ingresos_datos.py )
+
+Insertar datos ingresados en la tabla productos ( db_funciones.py )
 
 Parametro
 ---------
