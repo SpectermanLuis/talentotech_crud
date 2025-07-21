@@ -478,6 +478,7 @@ def getNombre(mensaje="Ingrese el nombre del producto: ")
 ```
 
 Solicita ingresar nombre del producto ( ingreso / actualizacion x todos los campos)
+
 Validaciones basicas , que no este vacio y que tenga una longitud minima
 
 Parametro
@@ -499,6 +500,7 @@ def getNombreConVacio(mensaje="Ingrese nombre del producto: ")
 ```
 
 Solicita ingresar nombre del producto ( en caso de actualizacion por campo especifico)
+
 Validaciones basicas en caso que se ingrese un valor , que tenga una longitud minima
 
 Parametro
@@ -510,6 +512,7 @@ Retorna
 -------
 
 nombre - Nombre del producto si es que se modifica el campo
+
          Vacio si se va a mantener el mismo valor anterior
 
 <a id="ingreso_datos.getDescripcion"></a>
@@ -521,6 +524,7 @@ def getDescripcion(mensaje="Ingrese descripcion del producto: ")
 ```
 
 Solicita ingresar descripcion del producto ( ingreso / actualizacion x todos los campos)
+
 Validaciones basicas , que no este vacio y que tenga una longitud minima
 
 Parametro
@@ -542,6 +546,7 @@ def getDescripcionConVacio(mensaje="Ingrese descripcion del producto: ")
 ```
 
 Solicita ingresar descripcion del producto ( en caso de actualizacion por campo especifico)
+
 Validaciones basicas en caso que se ingrese un valor , que tenga una longitud minima
 
 Parametro
@@ -553,6 +558,7 @@ Retorna
 -------
 
 descripcion - Descripcion del producto si es que se modifica el campo
+
               Vacio si se va a mantener el mismo valor anterior
 
 <a id="ingreso_datos.getCategoria"></a>
@@ -564,6 +570,7 @@ def getCategoria(mensaje="Ingrese categoria del producto: ")
 ```
 
 Solicita ingresar categoria del producto ( ingreso / actualizacion x todos los campos)
+
 Validaciones basicas , que no este vacio y que tenga una longitud minima
 
 Parametro
@@ -585,6 +592,7 @@ def getCategoriaConVacio(mensaje="Ingrese categoria del producto: ")
 ```
 
 Solicita ingresar categoria del producto ( en caso de actualizacion por campo especifico)
+
 Validaciones basicas en caso que se ingrese un valor , que tenga una longitud minima
 
 Parametro
@@ -607,6 +615,7 @@ def getPrecio(mensaje="💲 Ingrese el *precio* del producto: ")
 ```
 
 Solicita ingresar precio del producto ( ingreso / actualizacion x todos los campos)
+
 Validaciones basicas , que sea un numero valido , no cero ni negativo
 
 Parametro
@@ -628,6 +637,7 @@ def getPrecioConVacio(mensaje="💲 Ingrese el *precio* del producto: ")
 ```
 
 Solicita ingresar precio del producto ( en caso de actualizacion por campo especifico)
+
 Validaciones basicas en caso que se ingrese un valor , que sea numero valido no cero ni negativo        
 
 Parametro
@@ -639,6 +649,7 @@ Retorna
 -------
 
 precio  - Precio del producto si es que se modifica el campo
+
           Vacio si se va a mantener el mismo valor anterior
 
 <a id="ingreso_datos.getCantidad"></a>
@@ -650,6 +661,7 @@ def getCantidad(mensaje="📦 Ingrese cantidad disponible: ")
 ```
 
 Solicita ingresar cantidad del producto ( ingreso / actualizacion x todos los campos)
+
 Validaciones basicas , que sea un numero valido , no cero ni negativo
 
 Parametro
@@ -671,6 +683,7 @@ def getCantidadConVacio(mensaje="📦 Ingrese cantidad disponible: ")
 ```
 
 Solicita ingresar cantidad del producto ( en caso de actualizacion por campo especifico)
+
 Validaciones basicas en caso que se ingrese un valor , que sea numero valido no cero ni negativo        
 
 Parametro
@@ -682,6 +695,7 @@ Retorna
 -------
 
 cantidad - Cantidad del producto si es que se modifica el campo
+
            Vacio si se va a mantener el mismo valor anterior
 
 <a id="ingreso_datos.getIdProductoBaseLista"></a>
@@ -699,12 +713,15 @@ Parametro
 ---------
 
 mensaje = identifica proceso que solicita codigo producto
+
           por ejemplo :  mensaje = 'Ingresar Id Producto a eliminar :"
+
                          mensaje = 'Ingresar Id Producto a modificar :"
 
 Retorna
 -------
 Id - Entero - Identificacion del producto seleccionado
+
               Si en la tabla producto esta vacia , devuelve cero
 
 <a id="ingreso_datos.getIdProducto"></a>
@@ -767,7 +784,9 @@ def eliminarProducto()
 ```
 
 Proceso para la eliminacion de un producto
+
 Solicita ingresar el id de un producto desde una lista de todos los productos
+
 Eliminar producto de la tabla productos
 
 Parametro
@@ -789,8 +808,10 @@ def modificarProducto()
 ```
 
 Modificar datos de un producto existente 
+
 Solicita ingresar los datos del producto seleccionando el id desde una lista de todos los productos     
-Solicata todos los campos para modificar
+
+Solicita todos los campos para modificar
 
 Parametro
 ---------
@@ -811,6 +832,7 @@ def consultaProductoPorId()
 ```
 
 Consultar los datos de un producto especifico
+
 Solicita ingresar el id de un producto
 
 Parametro
@@ -833,7 +855,9 @@ def modificarProductoPorCampo()
 
 Moficar los datos de un producto seleccionado solo de los campos necesarios , no siendo 
 necesario volver a ingresar los mismos como sucede en modificarProducto()
+
 Solicita ingresar el id de un producto previa visualizacion de una lista de todos los productos
+
 Solicita campo por campo el valor a modificar , en caso de no modicar se pasa la solicitud
 con enter dejando el campo vacio , indicando que se mantiene el valor anterior
 
