@@ -110,7 +110,7 @@ def main():
                               # la funcion bd_leer_prodcucto_bajo_stock(limite) nos retorna una lista con todos los productos cuyo campo cantidad es menor o igual a límite
                               lista_productos = bd_leer_producto_bajo_stock(limite)
                               # evaluamos e informamos
-                              mostrar_listado_productos(lista_productos, f"PRODUCTOS CON STOCK MENOR O IGUAL A: {limite}")
+                              mostrar_listado_productos(lista_productos, f"PRODUCTOS CON STOCK MENOR A: {limite}")
                               pausar()
 
 

@@ -230,10 +230,12 @@ def bd_leer_producto_bajo_stock(limite):
         cursor = conexion.cursor()
         # preparamos la consulta SQL parametrizada
         sql = """SELECT * FROM productos WHERE cantidad < ?"""
+        
         # ejecutamos la consulta con el parámetro cantidad
         cursor.execute(sql, (limite,))
         # volcamos en una variable local el dato que vienen de la base
         lista_productos = cursor.fetchall()
+
     except Exception as error:
         # muestramos en pantalla si hubo error
         print(f"Error encontrado al leer el registro por id: {error}")
