@@ -37,11 +37,12 @@ Funcionalidades de la aplicación
 ``` tree
     ├── inventario.db      ( base de datos Sqlite )
     │  
-    ├── main.py            ( archivo principal del crud)
-    ├── utilidades.py      ( funciones de utilidad varias usadas en el sistema)
-    ├── def_menus.py       ( definicion del menu principal y los distintos submenues)
-    ├── db_funciones.py    ( funciones que permiten la comunicacion y operaciones con la base de datos)
-    ├── ingreso_datos.py   ( interfases para comunicarse con el usurio )
+    ├── main.py                   ( archivo principal del crud)
+    ├── utilidades.py             ( funciones de utilidad varias usadas en el sistema)
+    ├── def_menus.py              ( definicion del menu principal y los distintos submenues)
+    ├── db_funciones.py           ( funciones que permiten la comunicacion y operaciones con la base de datos)
+    ├── ingreso_datos.py          ( interfases para comunicarse con el usuario )
+    ├── operaciones_producto.py   ( operaciones del crud )
     │
     └── README.md          ( el presente archivo README.MD con la descripcion del sistema) 
 ```
